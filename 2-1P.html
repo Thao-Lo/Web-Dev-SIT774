@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Zavis" content="Web Developer">
+    <meta name="description" content="A simple Webpage">
+    <title>Zavis Simple Webpage</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 30rem;
+        }              
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }        
+      
+        </style>
+</head>
+<!--
+1. theme + photos -> images folder
+2. insert <img src alt> -> all images are same size (w, h)
+3. 1 different image: display with large, med, small sizes 
+4. abs hyperlink: some words -> link to w3 school
+5. hyperlink image -> deakin logo -> link to Deakin website - target =_blank
+6. email hyperlink, deakin student email
+7. table: 2 cols 4 rows, 1 heading 3 content rows -> add some relevant text
+8. 2 hyperlink somewhere in the webpage, link to different sections
+
+submit: screenshot webpage, html file
+  -->
+
+<body>
+    <header class="" id="introduction" style="width: 100%; text-align:center">
+        <h1 style="margin-left:0.5rem;">Zavis Fine-Dining Webpage</h1>
+    </header>
+    <main class="">
+        <section class="image-section" style="margin-bottom: 1rem;">
+            <img src="./node-server/public_html/images/pexels-change-c-c-974768353-33012130.jpg"
+                alt="four dessert tarts" width="250" height="380" class="food">
+            <img src="./node-server/public_html/images/pexels-kristina-nikolskaya-396769113-31150174.jpg" alt="a sushi"
+                width="250" height="380" class="food">
+            <img src="./node-server/public_html/images/pexels-szymon-shields-1503561-32900889.jpg" alt="a wine class"
+                width="250" height="380" class="food">
+            <img src="./node-server/public_html/images/pexels-szymon-shields-1503561-33033774.jpg" alt="bread and salad"
+                width="250" height="380" class="food">
+            <img src="./node-server/public_html/images/pexels-taryn-elliott-4457125.jpg" alt="a chef plating"
+                width="250" height="380" class="food">
+        </section>
+        <section class="differnt-image-size-section" id="cherry-image">
+            <img src="./node-server/public_html/images/pexels-polina-tankilevitch-4828496.jpg" alt="a bowl of cherries"
+                width="700" class="large-image">
+            <img src="./node-server/public_html/images/pexels-polina-tankilevitch-4828496.jpg" alt="a bowl of cherries"
+                width="350" class="med-image">
+            <img src="./node-server/public_html/images/pexels-polina-tankilevitch-4828496.jpg" alt="a bowl of cherries"
+                width="150" class="small-image">
+        </section>
+        <hr/>
+        <section class="hyperlink-section">          
+            <div class="link-word">
+                <h3 class="" style="margin-bottom:0.5rem">
+                    &#9830; For more details about a fine-dining restaurant: &rArr;
+                    <a href="https://www.ariasydney.com.au/" style="padding-left: 1rem;">Visit Aria Restaurant
+                        website</a>
+                </h3>
+            </div>
+            <div class="link-image">
+                <h3 style="margin-bottom: 0.5rem;">&#9830; Deakin Homepage</h3>
+                <a href="https://www.deakin.edu.au" class="">
+                    <img src="./node-server/public_html/images/deakin-logo.png" width="150" alt="Deakin logo">
+                </a>
+            </div>
+            <div class="link-email">
+                <h3 style="margin-bottom: 0.5rem;">
+                    &#9830; Student Email:
+                    <a href="mailto: s225733292@deakin.edu.au" class="">
+                        Zavis's Deakin Student Email
+                    </a>
+                </h3>
+
+            </div>
+        </section>
+        <hr/>
+        <section class="table-section" style="margin:1rem">
+            <table>
+                <caption style="font-size: 1.5rem;">Winter Menu</caption>
+                <tr>
+                    <th>Main</th>
+                    <th>Dessert</th>
+                </tr>
+                <tr>
+                    <td>Blackmore Wagyu</td>
+                    <td>Mango sorbet</td>
+                </tr>
+                <tr>
+                    <td>Maremma Duck</td>
+                    <td>Peach Souffle</td>
+                </tr>
+                <tr>
+                    <td>Kombu Lobster</td>
+                    <td>Australian's cheesees</td>
+                </tr>
+            </table>
+
+        </section>      
+    </main>
+    <footer>
+        <section class="navigate-section">
+            <a href="#introduction" class="">Jump to top</a>
+            <br/>
+            <a href="#cherry-image" class="">Jump to Cherry images</a>
+        </section>
+    </footer>
+</body>
+
+</html>
