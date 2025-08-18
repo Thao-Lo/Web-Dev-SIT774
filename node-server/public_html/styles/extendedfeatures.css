@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;  /* keep content always in the center */   
+    position: relative;
+}
+
+/* 1. Sticky Navigation Bar
+   This makes the navigation bar stick to the top of the screen as the user scrolls.
+   'position: sticky' keeps the element fixed at top: 0 until it's scrolled out of view.
+   Reference: https://www.w3schools.com/howto/howto_css_sticky_element.asp */
+.nav-bar {
+    background-color: rgb(236, 247, 243);
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.brand-wrapper {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 2rem;
+    align-items: center;
+}
+
+.logo-image {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.logo-brand {
+    font-size: 1.5rem;
+}
+
+.nav-list {
+    display: flex;
+    width: 28rem;
+    justify-content: space-between;
+    margin-left: auto;
+    list-style-type: none;
+    height: 100%;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    color: black;
+}
+
+.nav-list li a:hover {
+    cursor: pointer;
+    background-color: rgb(186, 221, 217, 60%);
+}
+
+.nav-list li a.active {
+    background-color: rgb(186, 221, 217);
+}
+
+.header-image {
+    width: 100%;
+    height: 25rem;
+    margin: 1rem auto;
+    background-image: url(../images/pexels-leaves.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.body-container {
+    padding: 0 1rem;
+}
+
+.main-title {
+    margin: 1rem 0;
+    color: #054000
+}
+
+.section {
+    margin: 1rem 0;
+}
+
+/* 2. Background Image + Gradient applied to Heading Container
+   This applies both a linear gradient and a background image to a heading container.
+   The gradient repeats horizontally (repeat-x) over the image for a layered effect.
+   Reference: https://www.geeksforgeeks.org/css/css-combine-background-image-with-gradient-overlay/ */
+.section-title {
+    background-image:
+        linear-gradient(90deg, rgba(87, 199, 133, 0.2) 30%, rgba(7, 64, 0, 0.4)),
+        url(../images/pexels-jean.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    color: white;
+    padding: 0.2rem 0;
+    margin-bottom: 0.5rem;
+    border-radius: 0 0.5rem;
+}
+
+.section-title h2 {
+    padding-left: 0.5rem;
+}
+
+.section-with-animation {
+    display: flex;
+}
+
+.section-with-animation .text {
+    flex: 3
+}
+
+.section-with-animation .section-animation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3. Animated Text (triggered automatically on page load)
+   This animates the 'Follow Us' link by changing its font size and color.
+   The animation duration is 2 seconds per cycle and it loops infinitely.
+   'animation: follow-text 2s infinite;' controls how often and how long it runs.
+   Reference: https://www.w3schools.com/css/css3_animations.asp */
+.section-animation-text {
+    color: red;
+    font-size: 1.5rem;
+    text-decoration: none;
+    animation: follow-text 2s infinite;
+}
+
+/*  Keyframes define the steps of the 'follow-text' animation.
+This animation gradually increases the font size and opacity of the text */
+@keyframes follow-text {
+    0% {
+        /* Start of animation */     
+        color: rgb(255, 0, 0, 40%);   /* Text color is red but semi-transparent (40% opacity) */
+        font-size: 1.5rem;              /* Font size is small (1.5rem) */
+    }
+
+    100% {
+        /* End of animation */   
+        color: rgb(255, 0, 0);    /* Text becomes fully opaque red */
+        font-size: 2.5rem;          /* Font size increases to 2.5rem for emphasis */
+    }
+}
+
+.section-with-image {
+    display: flex;
+}
+
+.section-with-image .text {
+    flex: 3;
+    align-self: center;
+}
+
+.section-with-image .image {
+    flex: 1;
+
+}
+
+.section-with-image img {
+    width: 10rem;
+    margin: 0 auto;
+    display: block;
+}
+
+/* 4. Custom List Style
+   This replaces the default disc bullets with lowercase letters.
+   Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type */
+.section-list li {
+    padding: 0.3rem 0;
+    list-style-type: lower-latin;
+}
+
+.section-text {
+    padding: 0.3rem;
+}
+
+.cutting-section {
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        height: 5rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .brand-wrapper {
+        padding: 0.3rem;
+    }
+
+    .nav-list {
+        width: 100%;
+        justify-content: space-around;
+        padding: 0;
+        margin-right: 0;
+    }
+
+    .nav-list li a {
+        padding: 0.4rem;
+    }
+
+    .section-with-animation {
+        flex-direction: column;
+    }
+
+    .section-with-animation .section-animation {
+        flex: none;
+        height: 3rem;
+    }
+
+    .section-with-image .image {
+        align-self: center;
+    }
+
+}

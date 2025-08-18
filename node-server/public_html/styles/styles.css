@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    background-color: antiquewhite;
+}
+@font-face {
+    font-family: 'Ubuntu Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Ubuntu-Regular.ttf)format(truetype);
+}
+body {
+    margin: 2em;
+    padding: 1em;
+    background-color: whitesmoke;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Comic Neue", cursive;
+    letter-spacing: 0.2em;
+}
+h1 {
+    background-color: darkorange;
+    color: bisque
+}
+h2,h3,h4 {
+    border: 2px solid darkorange;
+}
+a {
+    color: rgb(164, 238, 246);
+    background-color: rgb(225, 128, 68);
+}
+#sub-content-id {
+    background-color: rgb(11, 38, 174);
+    color: white;
+    font-family: 'Ubuntu Regular';
+    margin: -0.5em 0em;
+    padding: 0.5em;
+    box-shadow: 3px 3px 7px -1px rgb(134, 158, 171);
+}
+.sub-content {
+    background-color: rgb(233, 120, 44);
+    color: white;
+    margin: -0.5em 0em;
+    box-shadow: 5px 5px 7px -2px rgb(62, 64, 65);
+}  

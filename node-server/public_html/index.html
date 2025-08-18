@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton Introduction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <!-- 1. A navigation area with hyperlinks to key sections in the webpage -->
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-dark">
+                <div class="container">
+                    <a class="navbar-brand text-white" href="#">BadZ's</a>
+                    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav w-100 d-flex justify-content-evenly">
+                            <a class="nav-link text-white active" aria-current="page"
+                                href="#introduction">Introduction</a>
+                            <a class="nav-link text-white " href="#thumbnail">Rules</a>
+                            <a class="nav-link text-white " href="#card">Specifications</a>
+                            <a class="nav-link text-white" href="#image-text">Equipment</a>
+                            <a class="nav-link text-white" href="#table">Court Measuraments</a>
+                            <!-- START DROPDOWN -->
+                            <div class="dropdown position-relative">
+                                <button class="btn btn-none dropdown-toggle px-0 px-lg-2 border-0 text-white"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    External Links
+                                </button>
+                                <ul class="dropdown-menu position-absolute">
+                                    <li><a class="dropdown-item" href="https://www.deakin.edu.au/" target="_blank">Deakin University</a>
+                                    </li>
+                                    <li><a class="dropdown-item" target="_blank"
+                                            href="https://studycbse.in/badminton-rules-history-mesurements-venues/?utm_source=chatgpt.com">
+                                            Study CBSE - Badminton</a></li>
+                                    <li><a class="dropdown-item" href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                                    <li><a class="dropdown-item" href="registration-form.html" target="_blank">Registration</a></li>
+                                </ul>
+                            </div>
+                            <!-- END DROPDOWN -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="container-fluid px-0" id="top">
+            <!-- 2. A heading section using a div block that holds a container -->
+            <div class="container-fluid p-4 mb-4 bg-success" style="--bs-bg-opacity: .7;">
+                <div class="container py-5">
+                    <h1 class="display-5 fw-bold">Welcome to the World of Badminton</h1>
+                    <p class="col-md-8 lead">Explore the fast-paced, exciting sport of badminton — learn about its
+                        rules, equipment, and how to get started.</p>
+                </div>
+            </div>
+
+            <!-- START CAROUSEL-->
+            <div id="carouselExample" class="carousel slide carousel-fade" style="height: 550px">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner h-100">
+                    <div class="carousel-item active h-100">
+                        <img src="./images/badminton/pexels-shuttlecock-5.jpg" class="d-block w-100 h-100"
+                            style="object-fit: cover;" alt="Close Up Photo of Shuttlecocks">
+                        <div class="carousel-caption">
+                            <h5 class="text-white">Saif71.com</h5>
+                            <p class="text-white">Close Up Photo of Shuttlecocks</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="./images/badminton/pexels-court-2.jpg" class="d-block w-100 h-100"
+                            style="object-fit: cover;" alt="HGreen and White Court with Badminton Rackets">
+                        <div class="carousel-caption">
+                            <h5>Eric Anada</h5>
+                            <p>Green and White Court with Badminton Rackets</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img src="./images/badminton/pexels-court-1.jpg" class="d-block w-100 h-100"
+                            style="object-fit: cover;" alt="Shuttlecocks on wooden floor in sports hall">
+                        <div class="carousel-caption">
+                            <h5>Leo Zhao</h5>
+                            <p>Shuttlecocks on wooden floor in sports hall</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="">Previous</span>
+
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="">Next</span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                </button>
+            </div>
+            <!-- END CAROUSEL-->
+
+            <!-- 3. Introduction WITH OFFCANVAS -->
+            <div class="container" id="introduction">
+                <h2 class="my-2">Introduction</h2>
+                <div>
+                    <p class="">
+                        Badminton is a widely enjoyed racket sport for both men and women, played in both singles and
+                        doubles formats. The objective is to use a racquet to hit a shuttlecock over a net so that it
+                        lands within the opponent’s court boundaries
+                    </p>
+
+                    <button class="btn btn-success" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">History Of
+                        Badminton</button>
+
+                    <!-- START OFFCANVAS -->
+                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1"
+                        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">History Of Badminton</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p>Originating from the Indian game “Poona,” badminton began gaining popularity under
+                                British colonial influence in the 19th century. </p>
+                            <p>The sport’s formal structure emerged
+                                with the first All England Championships in 1899, and later the English Badminton
+                                Association was established in 1893. In 1934, the International Badminton Federation—now
+                                the BWF—was founded.</p>
+                            <p class="">Today, major international competitions include the Thomas Cup
+                                (from 1948) and Uber Cup (from 1956) </p>
+
+                            <p class="">
+                                <strong>Reference: </strong>
+                                <a href="https://studycbse.in/badminton-rules-history-mesurements-venues/?utm_source=chatgpt.com"
+                                    class="">
+                                    Study CBSE: Badminton
+                                </a>
+                            </p>
+
+                        </div>
+                    </div>
+                    <!-- END OFFCANVAS -->
+                </div>
+                <p class="text-end"><a href="#top" class="">Top</a></p>
+            </div>
+
+            <!-- 4. A section with three thumbnail images in a row -->
+            <div class="container" id="thumbnail">
+                <h2 class="my-2">Rules of Badminton</h2>
+                <div>
+                    <p class="">
+                        A badminton match is played as the best of three games, with each game going up to 21 points
+                        using rally scoring, where a point is awarded on every serve. To win a game, a player must lead
+                        by at least two points, except when the score reaches 29–29, in which case the player who scores
+                        the 30th point wins.
+                    </p>
+                    <p class="">When the server wins a rally, they continue serving from the opposite
+                        service court. During service, both players must remain inside their service boxes, and the
+                        shuttle must be struck below waist height without touching the ground.</p>
+                    <div class="container-fluid px-0">
+                        <div class="row">
+                            <div class="col-sm-4 col-12 py-sm-1 py-2">
+                                <img src="./images/badminton/pexels-red-1.jpg" class="img-thumbnail"
+                                    alt="court yard with shuttlecock">
+                            </div>
+                            <div class="col-sm-4 col-12 py-sm-1 py-2">
+                                <img src="./images/badminton/pexels-red-2.jpg" class="img-thumbnail"
+                                    alt="court yard with racket">
+                            </div>
+                            <div class="col-sm-4 col-12 py-sm-1 py-2">
+                                <img src="./images//badminton/pexels-red-4.jpg" class="img-thumbnail"
+                                    alt="court yard with court lines">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-end"><a href="#top" class="">Top</a></p>
+            </div>
+
+            <!-- 5. card components to the page, with some helpful information -->
+            <div class="container" id="card">
+                <h2 class="my-2">Specifications</h2>
+                <div class="">
+                    <!-- START CARD -->
+                    <div class="row">
+                        <div class="col-sm-4 col-12 py-sm-1 py-2 ps-0">
+                            <div class="card px-0">
+                                <img src="./images/badminton/pexels-net.jpg" class="card-img-top"
+                                    alt="players stand next to the net">
+                                <div class="card-body">
+                                    <h5 class="card-title">Net height</h5>
+                                    <p class="card-text">
+                                        1.55 m at the sideline poles, and 1.52 m at the center.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-12 py-sm-1 py-2 ps-0">
+                            <div class="card">
+                                <img src="./images/badminton/pexels-person-1.jpg" class="card-img-top"
+                                    alt="a badminton player">
+                                <div class="card-body">
+                                    <h5 class="card-title">Court dimensions</h5>
+                                    <p class="card-text">
+                                        13.40 m × 5.18 m for singles, and 13.40 m × 6.10 m for doubles
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-12 py-sm-1 py-2 ps-0">
+                            <div class="card">
+                                <img src="./images/badminton/pexels-court-3.jpg" class="card-img-top"
+                                    alt="a shuttlecock">
+                                <div class="card-body">
+                                    <h5 class="card-title">Court lines</h5>
+                                    <p class="card-text">The court is marked with defined boundary lines that are 4 cm
+                                        wide</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CARD -->
+                </div>
+                <p class="text-end"><a href="#top" class="">Top</a></p>
+            </div>
+
+            <!-- 6. A section with two images, with some associated text and styling, spread across two rows -->
+
+            <div class="container" id="image-text">
+                <h2 class="my-2">Equipment</h2>
+                <div>
+                    <p class="">
+                        The badminton court is a rectangular playing surface divided by a net. It measures 13.4 meters
+                        long and is either 5.18 meters wide (singles) or 6.1 meters wide (doubles). The court includes
+                        marked zones for serving and rally play.
+                    </p>
+                    <div class="container-fluid ">
+                        <div class="row bg-success-subtle mb-2 px-sm-3 px-2 py-sm-4 py-3 rounded-3 d-flex">
+                            <div class="col-sm-4 col-12 d-flex align-items-center">
+                                <img src="./images/badminton/pexels-shuttlecock-2.jpg" class="img-fluid rounded-4"
+                                    alt="a racket">
+                            </div>
+                            <div class="col-sm-8 col-12">
+                                <h4 class="text-dark-emphasis mt-2">Racket</h4>
+                                <p class="mb-2">Standard racket size: 68 cm long with a 23 cm wide head.
+                                    It has a thin shaft and a stringed
+                                    oval head used to hit the shuttlecock.</p>
+
+                                <!-- START COLLAPSE -->
+                                <p class="d-inline-flex">
+                                    <button class="btn btn-success" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseRacket" aria-expanded="false"
+                                        aria-controls="collapseRacket">
+                                        More information
+                                    </button>
+                                </p>
+                                <div class="collapse" id="collapseRacket">
+                                    <div class="card card-body bg-light-subtle rounded-3 px-2 py-1">
+                                        A badminton racket is lightweight, usually made from carbon fiber or aluminum,
+                                        designed to allow quick, controlled swings.
+                                    </div>
+                                </div>
+                                <!-- END COLLAPSE -->
+                            </div>
+
+
+
+                        </div>
+                        <div class="">
+                            <p class="">Badminton equipment is designed to enhance speed, control, and agility during
+                                play. Choosing the right gear improves performance and reduces the risk of injury.</p>
+
+                        </div>
+                        <div class="row bg-success-subtle mb-2 px-sm-3 px-2 py-sm-4 py-3 rounded-3 d-flex">
+                            <div class="col-sm-8 col-12">
+                                <h4 class="text-dark-emphasis">Shuttlecock</h4>
+                                <p class="">Shuttlecock weight: between 4.74 and 5.50 g, typically with 16 feathers.
+                                </p>
+
+                                <!-- START COLLAPSE -->
+                                <p class="d-inline-flex">
+                                    <button class="btn btn-success" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseShuttlecock" aria-expanded="false"
+                                        aria-controls="collapseShuttlecock">
+                                        More Information
+                                    </button>
+                                </p>
+                                <div class="collapse" id="collapseShuttlecock">
+                                    <div class="card card-body bg-light-subtle rounded-3 px-2 py-1  mb-2">
+                                        The shuttlecock, also known as a birdie, is a cone-shaped projectile with a
+                                        rounded rubber or cork base and a skirt made of feathers or synthetic material.
+
+                                    </div>
+                                </div>
+                                <!-- END COLLAPSE -->
+
+                            </div>
+                            <div class="col-sm-4 col-12 d-flex align-items-center">
+                                <img src="./images/badminton/pexels-shuttlecock-1.jpg"
+                                    class="img-fluid rounded-pill d-block my-auto" alt="shuttlecocks">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-end"><a href="#top" class="">Top</a></p>
+            </div>
+
+            <!-- 7. An example table with styling applied, containing some text/information -->
+            <div class="container" id="table">
+                <h2 class="my-2">Badminton Court Measurements</h2>
+                <div>
+                    <p>
+                        A badminton court has precise dimensions that vary slightly depending on whether the game is
+                        played as singles or doubles. The markings on the court help define service areas and boundaries
+                        essential for fair play.
+                    </p>
+                    <!-- START TABLE -->
+                    <div class="table-responsive-md">
+                        <table class="table table-striped table-hover overflow-x-auto">
+                            <thead class="table-success text-nowrap">
+                                <tr>
+                                    <th scope="col">Measurement</th>
+                                    <th scope="col">Value</th>
+                                    <th scope="col">Used In</th>
+                                    <th scope="col">Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Court Length</th>
+                                    <td>13.40 m</td>
+                                    <td>Singles & Doubles</td>
+                                    <td>Same for all formats</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Court Width</th>
+                                    <td>5.18 m</td>
+                                    <td>Singles</td>
+                                    <td>Narrower than doubles</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Court Width</th>
+                                    <td>6.10 m</td>
+                                    <td>Doubles</td>
+                                    <td>Includes side alleys</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Net Height (at posts)</th>
+                                    <td>1.55 m</td>
+                                    <td>All formats</td>
+                                    <td>Slight dip at center</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Net Height (at center)</th>
+                                    <td>1.524 m</td>
+                                    <td>All formats</td>
+                                    <td>For proper tension</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Short Service Line</th>
+                                    <td>1.98 m from net</td>
+                                    <td>All formats</td>
+                                    <td>Service must cross this line</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Doubles Long Service Line</th>
+                                    <td>0.76 m from back</td>
+                                    <td>Doubles</td>
+                                    <td>Marks service limit</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Line Width</th>
+                                    <td>4 cm</td>
+                                    <td>All lines</td>
+                                    <td>Included in the court area</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END TABLE -->
+                    <p class="">
+                        Data adapted from
+                        <a href="https://studycbse.in/badminton-rules-history-mesurements-venues/" class="">StudyCBSE:
+                            Badminton Measurements</a>
+                    </p>
+                </div>
+
+                <p class="text-end"><a href="#top" class="">Top</a></p>
+                <p class="">Badminton is more than just a game—it's a test of skill, speed, and strategy. Whether you're
+                    a beginner or a pro, understanding the court, equipment, and rules is the first step to mastering
+                    the sport.</p>
+
+            </div>
+
+        </main>
+        <footer class="bg-dark p-2 text-center">
+            <p class="text-white m-2">BadZ's Web Experience</p>
+        </footer>
+
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+</html>
